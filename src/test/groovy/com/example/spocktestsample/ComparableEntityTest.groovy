@@ -7,10 +7,10 @@ import java.time.LocalDateTime
 
 @Unroll
 class ComparableEntityTest extends Specification {
-    private static LocalDateTime date1 = LocalDateTime.now();
-    private static LocalDateTime date2 = date1.plusDays(1);
+    private static LocalDateTime date1 = LocalDateTime.now()
+    private static LocalDateTime date2 = date1.plusDays(1)
 
-    def "use '==' to compare"(ComparableEntity entity1, ComparableEntity entity2, boolean result) {
+    def "use '==' to compare"() {
         expect:
         result == (entity1 == entity2)
 
